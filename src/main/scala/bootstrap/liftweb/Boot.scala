@@ -48,7 +48,7 @@ class Boot {
       Menu("首页") / "index" :: // Simple menu form,简单的菜单形式,链接到根目录的index.html
         // Menu with special Link ,有特殊链接的菜单
         Menu(Loc("Static", Link(List("static"), true, "/static/index"),
-          "Static Content(静态内容显示)")) ::
+          "静态页面")) ::
         // Menu entries for the User management stuff user管理功能的链接,lift内置了用户管理模块
         User.sitemap: _*)
     //设置sitmap产生的函数
