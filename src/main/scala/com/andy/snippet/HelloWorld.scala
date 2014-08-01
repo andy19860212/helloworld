@@ -14,6 +14,10 @@ class HelloWorld {
   def howdy(in: NodeSeq): NodeSeq =
   Helpers.bind("b", in, "time" -> date.map(d => Text(d.toString)))
 
+  def who(in : NodeSeq) : NodeSeq =
+  Helpers.bind("n",in,"name" -> "张威")
+
+
   /*
    lazy val date: Date = DependencyFactory.time.vend // create the date via factory
 
